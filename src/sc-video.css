@@ -1,0 +1,21 @@
+sc-video {
+  display: block;
+  position: relative;
+}
+
+sc-video > [data-backdrop] {
+  width: 100%;
+}
+
+sc-video > *[data-content] {
+  align-items: center;
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+}
+
+sc-video iframe {
+  height: 100%;
+  width: 100%;
+}

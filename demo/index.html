@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Spartan Components - SC Video</title>
+    <link rel="stylesheet" href="../src/sc-video.css" />
+  </head>
+  <body>
+    <sc-video
+      data-provider="youtube"
+      data-id="9Tcy_V8jjf8"
+      data-title="Yuuf - In The Sun - Live in Surrey Hills"
+    >
+      <div data-content>
+        <a href="https://www.youtube.com/watch?v=9Tcy_V8jjf8">
+          Watch video on YouTube
+        </a>
+      </div>
+
+      <img
+        data-backdrop
+        src="//img.youtube.com/vi/9Tcy_V8jjf8/maxresdefault.jpg"
+        alt=""
+      />
+
+      <template data-playbutton>
+        <button>Play</button>
+      </template>
+
+      <template data-disclaimer>
+        By watching this video you accept
+        <a href="https://policies.google.com/privacy?hl=en">
+          Googles Privacy Terms
+        </a>
+        <button>Accept</button>
+      </template>
+    </sc-video>
+
+    <script type="module">
+      import "../src/sc-video.js";
+    </script>
+  </body>
+</html>

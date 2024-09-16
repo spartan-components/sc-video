@@ -1,0 +1,32 @@
+{
+  "name": "@spartan-components/sc-video",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run clean && rollup --config && cp ./src/sc-video.css ./dist",
+    "clean": "rm -rf ./dist",
+    "dev": "web-dev-server --open=demo --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spartan-components/sc-privacy.git"
+  },
+  "keywords": [
+    "Web components",
+    "Lazy video loading"
+  ],
+  "author": "Spartan Components",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spartan-components/sc-privacy/issues"
+  },
+  "homepage": "https://github.com/spartan-components/sc-privacy#readme",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@web/dev-server": "^0.4.6",
+    "rollup": "^4.20.0",
+    "rollup-plugin-html-literals": "^1.1.8"
+  }
+}
