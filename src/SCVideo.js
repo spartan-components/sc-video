@@ -51,7 +51,7 @@ class SCVideo extends HTMLElement {
       vimeo: html`<iframe
         title="${this._title ?? ""}"
         frameborder="0"
-        src="https://player.vimeo.com/video/${this.id}?autoplay=1"
+        src="https://player.vimeo.com/video/${this.vid}?autoplay=1"
         allow="autoplay fullscreen"
         allowfullscreen
       >
